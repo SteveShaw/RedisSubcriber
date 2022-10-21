@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(VolPersisiter)
+add_subdirectory(LevelReceiver)
+add_subdirectory(LevelUploader)
+# add_subdirectory(Builder)
+add_subdirectory(tests)
