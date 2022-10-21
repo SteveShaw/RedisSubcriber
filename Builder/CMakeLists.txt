@@ -1,0 +1,6 @@
+set(libname "tablebuilder")
+add_library(${libname} STATIC table_base.cpp iv_table.cpp)
+target_compile_features(${libname} PRIVATE cxx_std_17)
+target_include_directories(${libname} PRIVATE $ENV{HOME}/etc/include)
+target_link_directories(${libname} PRIVATE $ENV{HOME}/etc/lib)
+target_link_libraries(${libname} PRIVATE arrow ${Protobuf_LIBRARIES} iv_msg)

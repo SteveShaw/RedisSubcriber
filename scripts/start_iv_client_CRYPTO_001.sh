@@ -1,0 +1,3 @@
+#!/bin/bash
+screen -dmS CRRE_SUFFIX-01_FILES-01 $HOME/etc/bin/LevelReceiver CRYPTO CRYPTO-SUFFIX-01 CRYPTO-FILES-01 CSV
+screen -dmS CRDB_FILES-01 $HOME/etc/bin/LevelUploader CRYPTO CRYPTO-FILES-01

@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.8)
+set(TestApp "AllTests")
+find_package(Protobuf REQUIRED)
+add_executable(${TestApp} main_test.cpp ${CMAKE_SOURCE_DIR}/Builder/iv_table.cpp ${CMAKE_SOURCE_DIR}/Builder/table_base.cpp)
+target_include_directories(${TestApp} PRIVATE ${CMAKE_SOURCE_DIR}/src ${CMAKE_SOURCE_DIR}/include $ENV{HOME}/etc/include ${CMAKE_SOURCE_DIR}/Builder)
+target_link_directories(${TestApp} PRIVATE $ENV{HOME}/etc/lib)
+target_link_libraries(${TestApp} PRIVATE arrow ${Protobuf_LIBRARIES} iv_msg redis++ hiredis)
+target_compile_features(${TestApp} PRIVATE cxx_std_17)

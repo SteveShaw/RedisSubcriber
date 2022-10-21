@@ -1,0 +1,10 @@
+#!/bin/bash
+redis-cli DEL EQUITY-FILES-PY-02
+redis-cli DEL EQUITY-FILES-PY-02-HIST
+redis-cli DEL EQUITY-FILES-PY-02-PY
+redis-cli DEL EQUITY-SUFFIX-PY-02
+redis-cli DEL CRYPTO-FILES-PY-01
+redis-cli DEL CRYPTO-FILES-PY-01-HIST
+redis-cli DEL CRYPTO-FILES-PY-01-PY
+redis-cli DEL CRYPTO-SUFFIX-PY-01
+redis-cli HDEL BFCHI:AVA QueryDate
