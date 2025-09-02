@@ -9,4 +9,5 @@ Example of use Redis subscribe to receive data
 |Ce sera pertubé pendant au moins une semaine | It will be disrupted for at least one week |
 |Jusqu'à quand la circulation sera-t-elle pertubée | Until when will traffic be disrupted |
 | Vu que | Considering |
+|Je la soupçonne d'être coupable du meurtre | I suspect her of being guilty of the murder|
 
